@@ -40,3 +40,11 @@ Java Library path = /Users/andreas/Library/Java/Extensions:/Library/Java/Extensi
 [11.02.25, 15:18:31:666 MEZ] 00000054 SystemOut                                                    O server.xml.default.variables.config.source: 
 [11.02.25, 15:18:31:667 MEZ] 00000054 SystemOut                                                    O DefaultValuesConfigSource: 
 [11.02.25, 15:18:31:761 MEZ] 00000035 com.ibm.ws.webcontainer.extension                            W SRVE0190E: Datei nicht gefunden: /favicon.ico
+[11.02.25, 15:29:42:693 MEZ] 0000001b com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Der Server defaultServer wird gerade gestoppt, weil die JVM beendet wird.
+[11.02.25, 15:29:42:714 MEZ] 00000063 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Es wird bis zu 30 Sekunden gewartet, bis der Server in den Quiescemodus versetzt wird.
+[11.02.25, 15:29:42:727 MEZ] 00000051 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint ist auf Host *  (IPv6) an Port 9080 nicht mehr für Anforderungen empfangsbereit.
+[11.02.25, 15:29:42:729 MEZ] 00000051 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/
+[11.02.25, 15:29:43:467 MEZ] 0000001c com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Herunterfahren des Servers angefordert am Dienstag, 11. Februar 2025 um 15:29. Der Server defaultServer wird beendet.
+[11.02.25, 15:29:43:738 MEZ] 00000063 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Serverstilllegung abgeschlossen.
+[11.02.25, 15:29:43:827 MEZ] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung sample-microprofile-config wurde erfolgreich gestoppt.
+[11.02.25, 15:29:44:309 MEZ] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Der Server defaultServer wurde nach 13 Minuten, 38,646 Sekunden gestoppt.
