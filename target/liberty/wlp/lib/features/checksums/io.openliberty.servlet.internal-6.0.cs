@@ -1,0 +1,22 @@
+#Tue Feb 11 15:10:30 CET 2025
+bin/pluginUtility=c79045f8ba9b2b5702023e7fdcd62885
+bin/pluginUtility.bat=82227a86352f6ea5719d7c222afed4db
+bin/tools/ws-webserverPluginutil.jar=4f3488e83fc86655cbcb47df23a07749
+lib/com.ibm.websphere.security_1.1.97.jar=a8683ee913128ff917a9ff5695226d26
+lib/com.ibm.ws.app.manager.war.jakarta_1.0.97.jar=717a0a4a005236772c21066eddc39417
+lib/com.ibm.ws.http.plugin.merge_1.0.97.jar=153937919660df20a94ec64c34317c11
+lib/com.ibm.ws.managedobject_1.0.97.jar=a454d4c80dd0aa936bfb115663124363
+lib/com.ibm.ws.org.apache.commons.fileupload.jakarta_1.0.97.jar=8efda0aea7829fc6f038fb3fcc366dcb
+lib/com.ibm.ws.org.apache.commons.io_1.0.97.jar=dadc6e809fb9e283c8989186170bbe94
+lib/com.ibm.ws.session.jakarta_1.0.97.jar=da1a15244efaa1d919fd0c59f7470868
+lib/com.ibm.ws.webcontainer.cors.jakarta_1.0.97.jar=a98df2fc17d10cfb3f255edd6e9cd6d6
+lib/com.ibm.ws.webcontainer.jakarta_1.1.97.jar=cc2d0f8a63980e42e14af73a6ca32cac
+lib/com.ibm.ws.webcontainer.servlet.3.1.jakarta_1.0.97.jar=5d586ce337636dedefc5cff4a3cd7fd2
+lib/com.ibm.ws.webcontainer.servlet.4.0.jakarta_1.0.97.jar=94d252ed41249ea6094e1f006c9da745
+lib/com.ibm.ws.webserver.plugin.runtime.interfaces_1.0.97.jar=cca85e26f841d6db5272f1ef727d5de9
+lib/com.ibm.ws.webserver.plugin.runtime.jakarta_1.0.97.jar=cbfb676f2b5fb6ece5eaa6827d3a8872
+lib/com.ibm.ws.webserver.plugin.utility_1.0.97.jar=44916bd03a1d83973303641de9eb4e8b
+lib/features/io.openliberty.servlet.internal-6.0.mf=35eb32afa5d8411a4f8bd24a84024f1c
+lib/io.openliberty.session.6.0.internal_1.0.97.jar=e0068f04f739e5aebc0c322e1a238d44
+lib/io.openliberty.webcontainer.servlet.6.0.internal.factories_1.0.97.jar=8a1b79a200412a672109b239ddd12f58
+lib/io.openliberty.webcontainer.servlet.6.0.internal_1.0.97.jar=ff474b2abd9c6fc24a5bdfd51b92f8b3

@@ -1,0 +1,50 @@
+********************************************************************************
+product = Open Liberty 25.0.0.1 (wlp-1.0.97.cl250120250113-0302)
+wlp.install.dir = /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+java.version = 21.0.2
+java.runtime = Java(TM) SE Runtime Environment (21.0.2+13-LTS-58)
+os = Mac OS X (14.6.1; x86_64) (de_DE)
+process = 1596@MBP-von-Andreas.fritz.box
+Classpath = /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/andreas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[11.02.25, 15:10:34:966 MEZ] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: Der Server defaultServer wurde gestartet.
+[11.02.25, 15:10:36:485 MEZ] 0000002a com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Konfigurations-Drop-in-Ressource wird verarbeitet: /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/liberty/wlp/usr/servers/defaultServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[11.02.25, 15:10:37:282 MEZ] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: Der Kernel wurde nach  2,772 Sekunden gestartet.
+[11.02.25, 15:10:37:331 MEZ] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Die Featureaktualisierung wurde gestartet.
+[11.02.25, 15:10:39:552 MEZ] 0000002b com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: dropins auf Anwendungen überwachen.
+[11.02.25, 15:10:41:675 MEZ] 0000002b org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP2)
+[11.02.25, 15:10:41:879 MEZ] 00000039 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Die Anwendung sample-microprofile-config wird gestartet.
+[11.02.25, 15:10:41:881 MEZ] 00000039 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: Die Anwendung sample-microprofile-config verwendet die lose Anwendungsdefinition an der Position /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/liberty/wlp/usr/servers/defaultServer/apps/sample-microprofile-config.war.xml.
+[11.02.25, 15:10:45:631 MEZ] 00000039 com.ibm.ws.session.WASSessionCore                            I SESN8501I: Der Sitzungsmanager konnte keine persistente Speicherposition finden. HttpSession-Objekte werden im lokalen Anwendungsserverspeicher gespeichert.
+[11.02.25, 15:10:45:644 MEZ] 00000039 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Das Webmodul wird geladen: Liberty Project.
+[11.02.25, 15:10:45:647 MEZ] 00000039 com.ibm.ws.webcontainer                                      I SRVE0250I: Das Webmodul Liberty Project wurde an default_host gebunden.
+[11.02.25, 15:10:45:648 MEZ] 00000039 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Webanwendung verfügbar: (default_host): http://mbp-von-andreas.fritz.box:9080/
+[11.02.25, 15:10:45:700 MEZ] 00000036 com.ibm.ws.session.WASSessionCore                            I SESN0176I: Es wird ein neuer Sitzungskontext für den Anwendungsschlüssel default_host/ erstellt.
+[11.02.25, 15:10:45:707 MEZ] 00000036 com.ibm.ws.util                                              I SESN0172I: Der Sitzungsmanager verwendet die SecureRandom-Java-Standardimplementierung für die Generierung von Sitzungs-IDs.
+[11.02.25, 15:10:45:850 MEZ] 00000036 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Die Anwendung sample-microprofile-config ist nach 3,970 Sekunden gestartet.
+[11.02.25, 15:10:46:181 MEZ] 00000034 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: Der TCP-Kanal defaultHttpEndpoint wurde gestartet und ist jetzt für Anforderungen auf dem Host *  (IPv6) an Port 9080 empfangsbereit.
+[11.02.25, 15:10:46:230 MEZ] 00000035 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: Es wurde automatisch eine Konfigurationsdatei für ein Web-Server-Plug-in für diesen Server unter /Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml generiert.
+[11.02.25, 15:10:46:245 MEZ] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: Im Server wurden die folgenden Features installiert: [cdi-4.0, jndi-1.0, jsonb-3.0, jsonp-2.1, mpConfig-3.1, mpRestClient-3.0, restfulWS-3.1, restfulWSClient-3.1].
+[11.02.25, 15:10:46:248 MEZ] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Die Featureaktualisierung wurde in 9,016 Sekunden durchgeführt.
+[11.02.25, 15:10:46:248 MEZ] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: Der Server defaultServer ist für die Ausführung von Smarter Planet bereit. Der Server defaultServer ist nach 11,754 Sekunden gestartet.
+[11.02.25, 15:10:46:440 MEZ] 00000036 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.openliberty.config.ConfigApplication$Proxy$_$$_WeldClientProxy
+[11.02.25, 15:10:46:464 MEZ] 00000036 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [sample-microprofile-config] [/] [io.openliberty.config.ConfigApplication]: Initialisierung erfolgreich.
+[11.02.25, 15:11:31:425 MEZ] 00000036 SystemOut                                                    O server.xml.appproperties.config.source: 
+[11.02.25, 15:11:31:429 MEZ] 00000036 SystemOut                                                    O server.xml.variables.config.source: 
+[11.02.25, 15:11:31:430 MEZ] 00000036 SystemOut                                                    O SysPropConfigSource: 
+[11.02.25, 15:11:31:434 MEZ] 00000036 SystemOut                                                    O EnvConfigSource: 
+[11.02.25, 15:11:31:435 MEZ] 00000036 SystemOut                                                    O Custom Config Source: file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/resources/CustomConfigSource.json: 
+[11.02.25, 15:11:31:444 MEZ] 00000036 SystemOut                                                    O PropertiesConfigSource[source=file:/Users/andreas/Library/CloudStorage/OneDrive-IBM/Dokumente/Consulting/2024/Bundesbank/sample-liberty/sample-microprofile-config/target/classes/META-INF/microprofile-config.properties]: 
+[11.02.25, 15:11:31:446 MEZ] 00000036 SystemOut                                                    O server.xml.default.variables.config.source: 
+[11.02.25, 15:11:31:446 MEZ] 00000036 SystemOut                                                    O DefaultValuesConfigSource: 
+[11.02.25, 15:11:31:551 MEZ] 0000004c com.ibm.ws.webcontainer.extension                            W SRVE0190E: Datei nicht gefunden: /favicon.ico
+[11.02.25, 15:13:30:122 MEZ] 0000001b com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: Der Server defaultServer wird gerade gestoppt, weil die JVM beendet wird.
+[11.02.25, 15:13:30:146 MEZ] 00000063 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Es wird bis zu 30 Sekunden gewartet, bis der Server in den Quiescemodus versetzt wird.
+[11.02.25, 15:13:30:164 MEZ] 0000005a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: Der TCP-Kanal defaultHttpEndpoint ist auf Host *  (IPv6) an Port 9080 nicht mehr für Anforderungen empfangsbereit.
+[11.02.25, 15:13:30:171 MEZ] 0000005a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Webanwendung entfernt (default_host): http://mbp-von-andreas.fritz.box:9080/
+[11.02.25, 15:13:30:616 MEZ] 0000001c com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Herunterfahren des Servers angefordert am Dienstag, 11. Februar 2025 um 15:13. Der Server defaultServer wird beendet.
+[11.02.25, 15:13:31:185 MEZ] 00000063 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Serverstilllegung abgeschlossen.
+[11.02.25, 15:13:31:261 MEZ] 00000060 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: Die Anwendung sample-microprofile-config wurde erfolgreich gestoppt.
+[11.02.25, 15:13:31:980 MEZ] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: Der Server defaultServer wurde nach 2 Minuten, 57,483 Sekunden gestoppt.
