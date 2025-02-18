@@ -10,7 +10,7 @@
  *******************************************************************************/
 // end::copyright[]
 // tag::customConfig[]
-package io.openliberty.config;
+package io.openliberty.samples.config;
 
 import jakarta.json.stream.JsonParser;
 import jakarta.json.stream.JsonParser.Event;

@@ -9,7 +9,7 @@
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
 // end::copyright[]
-package io.openliberty.config;
+package io.openliberty.samples.config;
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.ws.rs.core.MediaType;
@@ -48,7 +48,6 @@ public class ConfigResource {
     for (ConfigSource source : config.getConfigSources()) {
       System.out.println(source.getName() + ": \n");
       JsonObjectBuilder propertyBuilder = Json.createObjectBuilder();
-
       for (String name : source.getPropertyNames()) {
         String val = source.getValue(name);
         propertyBuilder.add(name, (val == "")? "-" : val);
@@ -59,4 +58,6 @@ public class ConfigResource {
     }
     return sourcesBuilder.build();
   }
+
+
 }
