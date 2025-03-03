@@ -1,0 +1,8 @@
+{
+  "config_ordinal": 150,
+  "io_openliberty_samples_email": "admin@samples.openliberty.io",
+  "io_openliberty_samples_inventory_inMaintenance": false,
+  "io_openliberty_samples_system_inMaintenance": false,
+  "io_openliberty_samples_testConfigOverwrite": "CustomSource",
+  "test_config": "100"
+}
