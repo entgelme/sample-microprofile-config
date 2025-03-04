@@ -22,7 +22,8 @@ COPY --chown=1001:0 src/main/liberty/config/ /config/
 RUN features.sh
 COPY --chown=1001:0 target/*.war /config/apps/
 # Create a mount point to place the CustomConfigSource.json there by mounting it from a ConfigMap
+USER root
 RUN mkdir /wlpCustomConfig && chown 1001:0 /wlpCustomConfig
-
+USER default
 # COPY --chown=1001:0 resources/CustomConfigSource.json /wlpCustomConfig/
 RUN configure.sh  
