@@ -25,6 +25,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 
+import java.io.*;
+
 /**
  * User-provided ConfigSources are dynamic.
  * The getProperties() method will be periodically invoked by the runtime
@@ -63,6 +65,11 @@ public class CustomConfigSource implements ConfigSource {
   public Map<String, String> getProperties() {
     Map<String, String> m = new HashMap<String, String>();
     try {
+      System.out.println(new File(".").getAbsolutePath());
+      System.out.println("The path is '" + this.fileLocation + "'");
+      File file = new File("this.fileLocation");
+
+
       String jsonData = this.readFile(this.fileLocation);
       JsonParser parser = Json.createParser(new StringReader(jsonData));
       String key = null;
