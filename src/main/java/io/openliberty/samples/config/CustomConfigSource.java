@@ -34,8 +34,10 @@ import org.eclipse.microprofile.config.spi.ConfigSource;
  */
 public class CustomConfigSource implements ConfigSource {
 
-  String fileLocation = System.getProperty("user.dir").split("target")[0]
-      + "resources/CustomConfigSource.json";
+  String fileLocation = System.getenv("customConfigSourceLocation");
+
+  // String fileLocation = System.getProperty("user.dir").split("target")[0]
+  //     + "resources/CustomConfigSource.json";
 
   @Override
   public int getOrdinal() {
@@ -60,34 +62,38 @@ public class CustomConfigSource implements ConfigSource {
   // tag::getProperties[]
   public Map<String, String> getProperties() {
     Map<String, String> m = new HashMap<String, String>();
-    String jsonData = this.readFile(this.fileLocation);
-    JsonParser parser = Json.createParser(new StringReader(jsonData));
-    String key = null;
-    while (parser.hasNext()) {
-      final Event event = parser.next();
-      switch (event) {
-      case KEY_NAME:
-        key = parser.getString();
-        break;
-      case VALUE_STRING:
-        String string = parser.getString();
-        m.put(key, string);
-        break;
-      case VALUE_NUMBER:
-        BigDecimal number = parser.getBigDecimal();
-        m.put(key, number.toString());
-        break;
-      case VALUE_TRUE:
-        m.put(key, "true");
-        break;
-      case VALUE_FALSE:
-        m.put(key, "false");
-        break;
-      default:
-        break;
+    try {
+      String jsonData = this.readFile(this.fileLocation);
+      JsonParser parser = Json.createParser(new StringReader(jsonData));
+      String key = null;
+      while (parser.hasNext()) {
+        final Event event = parser.next();
+        switch (event) {
+        case KEY_NAME:
+          key = parser.getString();
+          break;
+        case VALUE_STRING:
+          String string = parser.getString();
+          m.put(key, string);
+          break;
+        case VALUE_NUMBER:
+          BigDecimal number = parser.getBigDecimal();
+          m.put(key, number.toString());
+          break;
+        case VALUE_TRUE:
+          m.put(key, "true");
+          break;
+        case VALUE_FALSE:
+          m.put(key, "false");
+          break;
+        default:
+          break;
+        }
       }
+      parser.close();
+    } catch (Exception e) {
+      e.printStackTrace();
     }
-    parser.close();
     return m;
   }
   // end::getProperties[]
