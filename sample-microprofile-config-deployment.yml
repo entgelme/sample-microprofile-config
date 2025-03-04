@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sample-microprofile-config
+  name: sample-microprofile-config
+  namespace: sample-microprofile-config
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: sample-microprofile-config
+  template:
+    metadata:
+      labels:
+        deployment: sample-microprofile-config
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/sample-microprofile-config/sample-microprofile-config
+        imagePullPolicy: IfNotPresent
+        name: sample-microprofile-config
+        ports:
+        - containerPort: 9080
+          protocol: TCP
+        resources: {}
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30        
