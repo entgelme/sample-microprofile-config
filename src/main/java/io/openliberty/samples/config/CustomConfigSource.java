@@ -68,6 +68,7 @@ public class CustomConfigSource implements ConfigSource {
       System.out.println(new File(".").getAbsolutePath());
       System.out.println("The path is '" + this.fileLocation + "'");
       File file = new File("this.fileLocation");
+      System.out.println("The file exists? " + file.exists());
 
 
       String jsonData = this.readFile(this.fileLocation);
