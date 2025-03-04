@@ -13,9 +13,9 @@ LABEL \
   vendor="Open Liberty" \
   name="system" \
   version="$VERSION-$REVISION" \
-  summary="Demonstrates an API to return the Microprofile configuration sources and their settings.
+  summary="Demonstrates an API to return the Microprofile configuration sources and their settings." \
   description="Also demonstrates the addition of an external JSON config source, e.g. from a ConfigMap. Uses the mpconfig-3.1 feature. \
-    Derived from the OpenLiberty Getting Started guide" \"
+    Derived from the OpenLiberty Getting Started guide"
 
 COPY --chown=1001:0 src/main/liberty/config/ /config/
 
