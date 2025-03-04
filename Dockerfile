@@ -25,5 +25,5 @@ COPY --chown=1001:0 target/*.war /config/apps/
 USER root
 RUN mkdir /wlpCustomConfig && chown 1001:0 /wlpCustomConfig
 USER default
-# COPY --chown=1001:0 resources/CustomConfigSource.json /wlpCustomConfig/
+COPY --chown=1001:0 resources/CustomConfigSource.json /wlpCustomConfig/
 RUN configure.sh  
