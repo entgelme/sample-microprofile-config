@@ -15,6 +15,11 @@ spec:
       labels:
         deployment: sample-microprofile-config
     spec:
+      volumes:
+        - name: config
+          configMap:
+            name: custom-config
+            defaultMode: 420    
       containers:
       - image: image-registry.openshift-image-registry.svc:5000/sample-microprofile-config/sample-microprofile-config
         imagePullPolicy: IfNotPresent
@@ -23,6 +28,11 @@ spec:
         - containerPort: 9080
           protocol: TCP
         resources: {}
+        volumeMounts:
+          - name: config
+            readOnly: true
+            mountPath: /wlpCustomConfig/
+
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
