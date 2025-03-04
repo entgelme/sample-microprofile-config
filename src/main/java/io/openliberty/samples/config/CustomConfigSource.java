@@ -70,38 +70,41 @@ public class CustomConfigSource implements ConfigSource {
       File file = new File("this.fileLocation");
       System.out.println("The file exists? " + file.exists());
 
-
-      String jsonData = this.readFile(this.fileLocation);
-      JsonParser parser = Json.createParser(new StringReader(jsonData));
-      String key = null;
-      while (parser.hasNext()) {
-        final Event event = parser.next();
-        switch (event) {
-        case KEY_NAME:
-          key = parser.getString();
-          break;
-        case VALUE_STRING:
-          String string = parser.getString();
-          m.put(key, string);
-          break;
-        case VALUE_NUMBER:
-          BigDecimal number = parser.getBigDecimal();
-          m.put(key, number.toString());
-          break;
-        case VALUE_TRUE:
-          m.put(key, "true");
-          break;
-        case VALUE_FALSE:
-          m.put(key, "false");
-          break;
-        default:
-          break;
+      if (!file.exists()) {
+        m.put("pi","papo");
+      } else {
+        String jsonData = this.readFile(this.fileLocation);
+        JsonParser parser = Json.createParser(new StringReader(jsonData));
+        String key = null;
+        while (parser.hasNext()) {
+          final Event event = parser.next();
+          switch (event) {
+          case KEY_NAME:
+            key = parser.getString();
+            break;
+          case VALUE_STRING:
+            String string = parser.getString();
+            m.put(key, string);
+            break;
+          case VALUE_NUMBER:
+            BigDecimal number = parser.getBigDecimal();
+            m.put(key, number.toString());
+            break;
+          case VALUE_TRUE:
+            m.put(key, "true");
+            break;
+          case VALUE_FALSE:
+            m.put(key, "false");
+            break;
+          default:
+            break;
+          }
         }
+        parser.close();
       }
-      parser.close();
     } catch (Exception e) {
       e.printStackTrace();
-    }
+    }   
     return m;
   }
   // end::getProperties[]
